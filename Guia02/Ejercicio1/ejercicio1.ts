@@ -10,6 +10,7 @@ class Rombo {
 
 
 function CalArea(): number {
+    //Instanciando clase Rombo
     let ValRombo = new Rombo(20,5);
     return ValRombo.DiagonalHorizontal * ValRombo.DiagonalVertical;
     
