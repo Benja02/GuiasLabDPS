@@ -10,7 +10,7 @@ import { Cliente } from '../cliente'
 
 
 export class ClienteComponent implements OnInit {
-  nacionalidad = ['','El Salvador', 'Mexico', 'Rusia','Mongolia'];
+  nacionalidad = ['Guatemala','El Salvador', 'Mexico', 'Rusia','Mongolia'];
   cliente = new Cliente(1,'','',23);
   enviar = false;
   constructor() { }
