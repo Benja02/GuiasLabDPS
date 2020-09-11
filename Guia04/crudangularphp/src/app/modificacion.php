@@ -10,9 +10,7 @@
   $con=retornarConexion();
   
 
-  mysqli_query($con,"update articulos set descripcion='$params->descripcion',
-                                          precio=$params->precio
-                                          where codigo=$params->codigo");
+  mysqli_query($con,"update articulos set descripcion='$params->descripcion',precio=$params->precio where codigo=$params->codigo");
     
   
   class Result {}

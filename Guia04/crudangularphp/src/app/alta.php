@@ -10,8 +10,7 @@
   $con=retornarConexion();
   
 
-  mysqli_query($con,"insert into articulos(descripcion,precio) values
-                  ('$params->descripcion',$params->precio)");
+  mysqli_query($con,"insert into articulos(descripcion,precio) values ('$params->descripcion',$params->precio)");
 
   
   class Result {}

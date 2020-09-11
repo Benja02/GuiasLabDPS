@@ -53,8 +53,7 @@ this.articulosServicio.modificacion(this.art).subscribe(datos => {
     });
 }
     seleccionar(codigo) {
-    this.articulosServicio.seleccionar(codigo).subscribe(result => this.art = result
-    [0]);
+    this.articulosServicio.seleccionar(codigo).subscribe(result => this.art = result[0]);
     }
     hayRegistros() {
     return true;
