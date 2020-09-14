@@ -36,27 +36,27 @@
   <h3>{{selectedAlumno.id == 0 ? "Agregar Nuevo Alumno" : "Actualizar Alumno"}}</h3>
 </div>
 <div class="form-group">
-<input type="text" [(ngModel)]="selectedAlumno.name" placeholder="name"
+<input type="text" [(ngModel)]="selectedAlumno.name" placeholder="name" required
 class="form-control">
 </div>
 <div class="form-group">
-<input type="text" [(ngModel)]="selectedAlumno.lastname" placeholder="lastname"
+<input type="text" [(ngModel)]="selectedAlumno.lastname" placeholder="lastname" required
 class="form-control">
 </div>
 <div class="form-group">
-<input type="number" [(ngModel)]="selectedAlumno.age" placeholder="age"
+<input type="number" [(ngModel)]="selectedAlumno.age" placeholder="age" required
 class="form-control">
 </div>
 <div class="form-group">
-  <input type="text" [(ngModel)]="selectedAlumno.dire" placeholder="Direccion"
+  <input type="text" [(ngModel)]="selectedAlumno.dire" placeholder="Direccion" required
   class="form-control">
 </div>
 <div class="form-group">
-  <input type="text" [(ngModel)]="selectedAlumno.tel" placeholder="Telefono" 
+  <input type="text" [(ngModel)]="selectedAlumno.tel" placeholder="Telefono" required
   class="form-control">
 </div>
 <div class="form-group">
-  <input type="email" [(ngModel)]="selectedAlumno.correo" placeholder="correo"
+  <input type="email" [(ngModel)]="selectedAlumno.correo" placeholder="correo" required
   class="form-control">
 </div>
 <button (click)="addOrEdit()" class="btn btn-primary btn-space">
