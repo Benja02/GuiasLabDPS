@@ -3,6 +3,8 @@ export class Alumno {
     id: number= 0;
     name: string = '';
     lastname: string = '';
-    age: number = 0;
-     
+    age: number;
+    dire: string = '';
+    correo: string = '';
+    tel: string = '';
 }

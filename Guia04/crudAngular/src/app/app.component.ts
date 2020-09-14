@@ -10,12 +10,10 @@ export class AppComponent {
   title = 'crudAngular';
 
   //Array
-  alumnoArray: Alumno[] = [{id:1,name:"Alex", lastname: "Campos", age:35},
-  {id:2,name:"Maria", lastname: "Lopez", age:23},
-  {id:3,name:"Juan", lastname: "Mendez", age:25}
+  alumnoArray: Alumno[] = [{id:1,name:"Alex", lastname: "Campos", age:35, dire:'', tel:'2288-6636', correo:"ele@gmail.com"},
 ]
 //atributo selecAlumno del tipo Alumno, por lo tanto, puede almacenar un objeto
-selectedAlumno: Alumno = {id:0, name:'', lastname:'', age:0 };
+selectedAlumno: Alumno = {id:0, name:'', lastname:'', age:0, dire:'',tel:'',correo:'' };
 //un método que no retorna nada “void”, recibe como parámetro una variable del
 //tipo Alumno, para ser asignada al atributo selectAlumno y poder ser mostrado
 // en pantalla.
@@ -33,7 +31,7 @@ if(this.selectedAlumno.id === 0) // INSERT
 this.selectedAlumno.id = this.alumnoArray.length + 1;
 this.alumnoArray.push(this.selectedAlumno);
 }
-this.selectedAlumno = {id:0, name: '', lastname: '', age:0 };
+this.selectedAlumno = {id:0, name:'', lastname:'', age: 0, dire:'',tel:'',correo:'' };
 }
 //método que no retorna nada “void”, NO recibe parámetro, elimina del arreglo el
 //registro, pero antes muestra en pantalla un confirmar, se recorre el arreglo
@@ -45,11 +43,9 @@ delete(): void
 if(confirm('¿Esta seguro de elimiar el Registro?'))
 {
 this.alumnoArray = this.alumnoArray.filter(x => x != this.selectedAlumno);
-this.selectedAlumno = {id:0, name: '', lastname: '', age:0 };
+this.selectedAlumno = {id:0, name:'', lastname:'', age:0, dire:'',tel:'',correo:'' };
 }
 }
-
-
 
 
 }

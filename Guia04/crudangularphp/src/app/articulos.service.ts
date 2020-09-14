@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ArticulosService {
-  url='http://scratchya.com.ar/angular/problema016/'; // disponer url de su servidor que tiene las páginas PHP
+  url='http://localhost:8080/recursos/'; // disponer url de su servidor que tiene las páginas PHP
 
   constructor(private http: HttpClient) { }
   recuperarTodos() {
